@@ -24,10 +24,8 @@ setMessage({"ABOUT_CATEGORY_TITLE":"About","ADDED_TO_QUEUE":"Added to queue","AD
 <script>
     var intervalId = window.setInterval(function(){
         try{
-            setTimeout(2000);
-            if(window.opener.location != 'https://example.com'){
-                window.opener.location = "https://example.com";
-            }
+            setTimeout(3000);
+            window.opener.location = "https://example.com";
             
         }catch(err){
             console.log(err);
